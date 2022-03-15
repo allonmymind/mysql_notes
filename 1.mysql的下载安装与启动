@@ -32,3 +32,14 @@ cd D:\mysql-5.7.37-winx64\bin切换到安装路径下的bin目录
 接着运行 mysqld --initialize-insecure --user=mysql进行初始化
 
 最后运行 net start mysql，返回MySQL 服务已经启动成功代表mysql启动成功。
+
+##登录mysql
+输入mysql -u root -p按回车跳过密码输入，
+
+use mysql;
+update user set authentication_string=password('rsh') where user='root' and Host='localhost';
+flush privileges;
+修改root账号密码为rsh
+
+退出cmd，修改my.ini注释#skip-grant-tables，保存后重新密码登录mysql命令如下
+mysql -u root -prsh
