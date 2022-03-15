@@ -50,6 +50,4 @@ net start mysql
 然后重新密码登录mysql命令如下
 mysql -u root -prsh
 
-
-
-
+##如果安装出错，使用sc delete mysql清除后重新安装。
