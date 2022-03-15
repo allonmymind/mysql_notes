@@ -41,5 +41,15 @@ update user set authentication_string=password('rsh') where user='root' and Host
 flush privileges;
 修改root账号密码为rsh
 
-退出cmd，修改my.ini注释#skip-grant-tables，保存后重新密码登录mysql命令如下
+quit退出cmd，修改my.ini注释#skip-grant-tables，保存
+
+##重新启动mysql
+net stop mysql
+net start mysql
+
+然后重新密码登录mysql命令如下
 mysql -u root -prsh
+
+
+
+
