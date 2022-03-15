@@ -2,3 +2,7 @@
 mysql -h 主机名或ip -u 用户名 -P 端口 -p密码
 mysql -h locahost -u root -P 3306 -prsh
 mysql -h 127.0.0.1 -u root -P 3306 -prsh
+
+
+##图形工具的使用sqlyog
+下载地址 https://en.softonic.com/download/sqlyog/windows/post-download
